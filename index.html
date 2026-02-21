@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampa Contractors Directory | Better than Yelp</title>
+    <meta name="description" content="Free directory for Tampa contractors. No monthly fees like Yelp. Find plumbers, electricians, HVAC, and more.">
+    <meta name="keywords" content="Tampa contractors, Tampa plumber, Tampa electrician, Yelp alternative, free contractor directory">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Tampa Contractors</a>
+            <div class="nav-links">
+                <a href="#directory">Browse</a>
+                <a href="#list">List Your Business</a>
+                <a href="#premium">Premium</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Better than Yelp for Tampa Contractors</h1>
+            <p class="subtitle">Free forever for contractors. No monthly fees. Real reviews from real homeowners.</p>
+            <div class="cta-buttons">
+                <a href="#list" class="btn btn-primary">List Your Business Free</a>
+                <a href="#directory" class="btn btn-secondary">Browse Contractors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <div class="container">
+            <h2>Why Choose Our Directory?</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">💰</div>
+                    <h3>Free Forever</h3>
+                    <p>Yelp charges $300-500/month. We're free forever for basic listings.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3>Real Reviews</h3>
+                    <p>No fake reviews. Real feedback from Tampa homeowners.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🔍</div>
+                    <h3>Local Focus</h3>
+                    <p>Built for Tampa, not every city. Get found by local customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directory -->
+    <section id="directory" class="directory">
+        <div class="container">
+            <h2>Browse Tampa Contractors</h2>
+            <p class="section-subtitle">Search by service type or location</p>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="service-filter">Service Type:</label>
+                    <select id="service-filter">
+                        <option value="all">All Services</option>
+                        <option value="Plumbing">Plumbing</option>
+                        <option value="HVAC">HVAC</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Carpentry">Carpentry</option>
+                        <option value="General Contracting">General Contracting</option>
+                        <option value="Roofing">Roofing</option>
+                        <option value="Landscaping">Landscaping</option>
+                        <option value="Painting">Painting</option>
+                        <option value="Flooring">Flooring</option>
+                        <option value="Handyman">Handyman</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location-filter">Location:</label>
+                    <select id="location-filter">
+                        <option value="all">All Locations</option>
+                        <option value="Tampa">Tampa</option>
+                        <option value="St. Petersburg">St. Petersburg</option>
+                        <option value="Clearwater">Clearwater</option>
+                        <option value="Brandon">Brandon</option>
+                        <option value="Riverview">Riverview</option>
+                        <option value="Wesley Chapel">Wesley Chapel</option>
+                        <option value="Lakeland">Lakeland</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="premium-filter">Premium:</label>
+                    <select id="premium-filter">
+                        <option value="all">All Contractors</option>
+                        <option value="premium">Premium Only</option>
+                        <option value="standard">Standard Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Contractor List -->
+            <div id="contractor-list" class="contractor-list">
+                <!-- Contractors will be loaded here by JavaScript -->
+                <div class="loading">Loading contractors...</div>
+            </div>
+
+            <div class="directory-note">
+                <p><i class="fas fa-crown"></i> = Premium Featured Contractor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Your Business</h3>
+                    <p>Fill out our simple form. Takes 2 minutes.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We Verify & List</h3>
+                    <p>We check your business and list you within 24 hours.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Customers</h3>
+                    <p>Homeowners find you through our directory.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Optional Premium</h3>
+                    <p>Get a verified badge and featured placement for $49 one-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- List Your Business -->
+    <section id="list" class="list-business">
+        <div class="container">
+            <h2>List Your Business Free</h2>
+            <p class="section-subtitle">Takes 2 minutes. No credit card required.</p>
+            
+            <div class="list-options">
+                <div class="list-option">
+                    <h3><i class="fas fa-check-circle"></i> Free Listing Includes:</h3>
+                    <ul>
+                        <li>Business name and description</li>
+                        <li>Service category and location</li>
+                        <li>Phone number (displayed to users)</li>
+                        <li>Appear in search results</li>
+                        <li>Basic verification badge</li>
+                    </ul>
+                    <a href="https://github.com/raiderj77/tampa-contractors/issues/new?template=new-contractor.md" 
+                       target="_blank" class="btn btn-primary">
+                        <i class="fas fa-plus-circle"></i> Submit Free Listing
+                    </a>
+                    <p class="small-note">Opens GitHub issue form</p>
+                </div>
+                
+                <div class="list-option premium-option">
+                    <div class="premium-badge">Premium</div>
+                    <h3><i class="fas fa-crown"></i> Premium Features ($49 one-time):</h3>
+                    <ul>
+                        <li>✅ "Verified" checkmark badge</li>
+                        <li>✅ Featured placement (top of directory)</li>
+                        <li>✅ Priority in search results</li>
+                        <li>✅ Contact info displayed prominently</li>
+                        <li>✅ Business highlighted in listings</li>
+                    </ul>
+                    <div class="premium-cta">
+                        <p class="price">$49 <span class="price-note">one-time, not monthly!</span></p>
+                        <a href="#premium" class="btn btn-premium">
+                            <i class="fas fa-crown"></i> Get Premium Badge
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="premium-section">
+        <div class="container">
+            <h2>Want More Visibility?</h2>
+            <p class="section-subtitle">One-time $49 fee (not monthly!)</p>
+            
+            <div class="premium-details">
+                <div class="premium-comparison">
+                    <div class="comparison-row">
+                        <div class="comparison-label">Monthly Fees</div>
+                        <div class="comparison-yelp">Yelp: $300-500/month</div>
+                        <div class="comparison-us">Us: $0/month</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-label">Premium Cost</div>
+                        <div class="comparison-yelp">Yelp: $300-500/month</div>
+                        <div class="comparison-us">Us: $49 one-time</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-label">Review Filtering</div>
+                        <div class="comparison-yelp">Yelp: Yes (algorithm)</div>
+                        <div class="comparison-us">Us: No fake reviews</div>
+                    </div>
+                </div>
+                
+                <div class="premium-actions">
+                    <h3>Ready to stand out?</h3>
+                    <p>Premium badge includes featured placement and verified checkmark.</p>
+                    <div class="payment-options">
+                        <p><strong>Payment options coming soon!</strong></p>
+                        <p>We're setting up Ko-fi for one-time payments. In the meantime, list free and we'll contact you about premium.</p>
+                    </div>
+                    <a href="https://github.com/raiderj77/tampa-contractors/issues/new?template=new-contractor.md" 
+                       target="_blank" class="btn btn-primary">
+                        List Free First
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is this really free forever?</h3>
+                    <p>Yes! Basic listings are completely free. No hidden fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you make money?</h3>
+                    <p>Optional premium badges ($49 one-time) and future affiliate partnerships.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How are reviews different from Yelp?</h3>
+                    <p>We focus on verified homeowner feedback, not filtered algorithms.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What areas do you cover?</h3>
+                    <p>Tampa Bay area: Tampa, St. Pete, Clearwater, Brandon, and surrounding cities.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I get listed?</h3>
+                    <p>Click "List Your Business Free" above. It takes 2 minutes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does verification take?</h3>
+                    <p>We verify and list businesses within 24 hours of submission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tampa Contractors Directory</h3>
+                    <p>Free alternative to Yelp for Tampa contractors.</p>
+                    <p>Built for the Tampa community.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <a href="#directory">Browse Contractors</a>
+                    <a href="#list">List Your Business</a>
+                    <a href="#premium">Premium Features</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Submit via GitHub Issues</p>
+                    <p>Not affiliated with Yelp.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Tampa Contractors Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
